@@ -24,7 +24,7 @@
 > ✅ Done! Now, after a codemod PR is merged, you can trigger a GitHub Action to auto-publish it to the [Codemod Registry](https://app.codemod.com/registry) under your org scope. See [Node.js codemods](https://codemod.link/nodejs-official) for an example.
 ---
 
-Official <FRAMEWORK_OR_SDK_OR_ORG> codemods to help users adopt new features and handle breaking changes with ease.
+Lingui codemods to help users adopt new features and handle breaking changes with ease.
 
 Community contributions are welcome and appreciated! Check open issues for codemods to build, or open a new one if something’s missing. See the [contribution guide](./CONTRIBUTING.md) for details.
 
