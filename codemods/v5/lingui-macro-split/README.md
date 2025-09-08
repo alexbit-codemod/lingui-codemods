@@ -1,39 +1,26 @@
-# jssg-codemod
+# lingui-macro-split
 
-Transform legacy code patterns
+Migrate from deprecated @lingui/macro to split @lingui/react/macro and @lingui/core/macro packages
 
-## Installation
-
-```bash
-# Install from registry
-codemod run jssg-codemod
-
-# Or run locally
-codemod run -w workflow.yaml
-```
 
 ## Usage
 
-This codemod transforms typescript code by:
+This codemod transforms TypeScript/JavaScript code by splitting imports from the deprecated `@lingui/macro` package into the new split packages:
 
-- Converting `var` declarations to `const`/`let`
-- Removing debug statements
-- Modernizing syntax patterns
+- **React macros** (`Trans`, `Plural`, `Select`, `SelectOrdinal`, `I18n`, `Date`, `Number`, `Time`, `RelativeTime`) → `@lingui/react/macro`
+- **Core macros** (`t`, `msg`, `plural`, `select`, `selectOrdinal`, `i18n`, `date`, `number`, `time`, `relativeTime`) → `@lingui/core/macro`
+- **Other imports** remain with `@lingui/macro` (for now)
 
-## Development
+### Example
 
-```bash
-# Test the transformation
-npm test
-
-# Validate the workflow
-codemod validate -w workflow.yaml
-
-# Publish to registry
-codemod login
-codemod publish
+**Before:**
+```typescript
+import { Trans, t, Plural, msg } from "@lingui/macro";
 ```
 
-## License
+**After:**
+```typescript
+import { Trans, Plural } from "@lingui/react/macro";
+import { t, msg } from "@lingui/core/macro";
+```
 
-MIT 
