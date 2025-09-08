@@ -40,7 +40,7 @@ npx codemod@latest <codemod-name>
 ```
 For example: 
 ```
-npx codemod@latest @nodejs/tmpDir-to-tmpdir
+npx codemod@latest lingui-macro-split
 ```
 ### From the source 
 ```bash
