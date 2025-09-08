@@ -1,17 +1,17 @@
 schema_version: "1.0"
 
-name: "jssg-codemod"
-version: "0.1.0"
-description: "Transform legacy code patterns"
-author: "Author <author@example.com>"
+name: "lingui-macro-split"
+version: "1.0.0"
+description: "Migrate from deprecated @lingui/macro to split @lingui/react/macro and @lingui/core/macro packages"
+author: "Lingui Migration Team"
 license: "MIT"
 workflow: "workflow.yaml"
 category: "migration"
 
 targets:
-  languages: ["typescript"]
+  languages: ["typescript", "javascript"]
 
-keywords: ["transformation", "migration"]
+keywords: ["lingui", "i18n", "internationalization", "migration", "macro", "react"]
 
 registry:
   access: "public"
