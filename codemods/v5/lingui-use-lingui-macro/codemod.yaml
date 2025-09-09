@@ -1,0 +1,18 @@
+schema_version: "1.0"
+
+name: "lingui-use-lingui-macro"
+version: "1.0.0"
+description: "Migrate from t(i18n) pattern to useLingui macro for non-JSX messages in React components"
+author: "Lingui Migration Team"
+license: "MIT"
+workflow: "workflow.yaml"
+category: "migration"
+
+targets:
+  languages: ["typescript", "javascript"]
+
+keywords: ["lingui", "i18n", "internationalization", "migration", "macro", "react", "useLingui"]
+
+registry:
+  access: "public"
+  visibility: "public"
